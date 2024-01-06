@@ -5,7 +5,7 @@ metadata:
   annotations:
     ingress.kubernetes.io/proxy-body-size: 100M
     ingress.kubernetes.io/app-root: "/"
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    # cert-manager.io/cluster-issuer: "letsencrypt-prod"
 spec:
   ingressClassName: "nginx"
   rules:
@@ -18,8 +18,8 @@ spec:
                 name: perfilnet-apigateway-svc
                 port:
                   number: 80
-      host: apigateway.holanda.dev.br
+      host: apigateway.perfilnet.local
   tls:
     - hosts:
-        - apigateway.holanda.dev.br
+        - apigateway.perfilnet.local
       secretName: apigateway-secret
