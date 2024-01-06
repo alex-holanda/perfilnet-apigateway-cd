@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: perfilnet-apigateway-app
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: perfilnet-apigateway-app
+  template:
+    metadata:
+      labels:
+        app: perfilnet-apigateway-app
+    spec:
+      containers:
+        - name: perfilnet-apigateway-app
+          image: alexholanda/perfilnet-apigateway
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8765
+
