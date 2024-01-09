@@ -23,7 +23,3 @@ spec:
     - hosts:
         - apigateway.holanda.dev.br
       secretName: apigateway-secret
-  ports:
-    - number: 81
-      name: http
-      protocol: HTTP
