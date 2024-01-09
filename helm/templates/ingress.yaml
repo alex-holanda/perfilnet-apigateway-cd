@@ -18,8 +18,8 @@ spec:
                 name: perfilnet-apigateway-svc
                 port:
                   number: 80
-      host: apigateway.perfilnet.local
+      host: apigateway.holanda.dev.br
   tls:
     - hosts:
-        - apigateway.perfilnet.local
+        - apigateway.holanda.dev.br
       secretName: apigateway-secret
