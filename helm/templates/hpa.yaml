@@ -3,7 +3,7 @@ kind: HorizontalPodAutoscaler
 metadata:
   name: perfilnet-authorization-hpa
 spec:
-  minReplicas: 1
+  minReplicas: 2
   maxReplicas: 5
   metrics:
     - resource:

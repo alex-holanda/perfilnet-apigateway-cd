@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: perfilnet-apigateway-app
 spec:
-  replicas: 4
   selector:
     matchLabels:
       app: perfilnet-apigateway-app
