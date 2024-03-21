@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: perfilnet-apigateway-app
-          image: alexholanda/perfilnet-apigateway
+          image: alexholanda/perfilnet-apigateway:{{ .Values.env.APP_VERSION }}
           imagePullPolicy: Always
           ports:
             - containerPort: 8765
